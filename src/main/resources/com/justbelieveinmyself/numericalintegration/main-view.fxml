@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane fx:controller="com.justbelieveinmyself.numericalintegration.MainController" alignment="TOP_CENTER" hgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="134.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="400.0" minWidth="10.0" prefWidth="134.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label text="Функция" />
+        <Label text="a =" GridPane.rowIndex="1" />
+        <Label text="b =" GridPane.rowIndex="2" />
+        <Label text="e =" GridPane.rowIndex="3" />
+        <Label text="Кол-во шагов:" GridPane.rowIndex="4" />
+        <TextField fx:id="funcText" GridPane.columnIndex="1" />
+        <TextField fx:id="aText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="bText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="eText" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="nText" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Button onMousePressed="#calculate" fx:id="calculate" text="Вычислить" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+        <Label fx:id="resultLabelSimpson" text="Результат по методу Симпсона" GridPane.rowIndex="6" />
+        <Label fx:id="resultLabelRect" text="Результат по методу центральных прямоугольников" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+    </children>
+</GridPane>
